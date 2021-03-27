@@ -3,7 +3,7 @@
 
     $answer = isset($_GET['answer']) ? $_GET['answer'] : 'fasztudja';
 
-    $_SESSION['1'] = $answer;
+    $_SESSION['elso'] = $answer;
 ?><!DOCTYPE html>
 <html lang="hu">
 <head>

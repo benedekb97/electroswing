@@ -1,7 +1,7 @@
 <?php
     session_start();
     $answer = isset($_GET['answer']) ? $_GET['answer'] : 'fasztudja';
-    $_SESSION['2'] = $answer;
+    $_SESSION['masodik'] = $answer;
 
 ?><!DOCTYPE html>
 <html lang="hu">

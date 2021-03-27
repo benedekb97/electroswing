@@ -84,12 +84,9 @@ $hatodik = [
                     <h5 class="card-title" style="margin-bottom:0;">Eredmény</h5>
                 </div>
                 <div class="card-body">
-                    <pre>
-                        <?= var_dump($_SESSION); ?>
-                    </pre>
-                    <h3 style="text-align:center;">Egy <b><?= isset($_SESSION['1']) && isset($elso[$_SESSION['1']]) ? $elso[$_SESSION['1']] : 'fasz tudja milyen öreg' ?></b>
-                        elefánt vagy, aki egy <b><?= isset($_SESSION['2']) && isset($masodik[$_SESSION['2']]) ? $masodik[$_SESSION['2']] : 'fasz tudja milyen évszakban' ?></b> született,
-                        és méghozzá szereted a <b><?= isset($_SESSION['5']) && isset($otodik[$_SESSION['5']]) ? $otodik[$_SESSION['5']] : 'fasz tudja mit' ?></b> az ánusznyílásodban.
+                    <h3 style="text-align:center;">Egy <b><?= isset($_SESSION['elso']) && isset($elso[$_SESSION['elso']]) ? $elso[$_SESSION['elso']] : 'fasz tudja milyen öreg' ?></b>
+                        elefánt vagy, aki egy <b><?= isset($_SESSION['masodik']) && isset($masodik[$_SESSION['masodik']]) ? $masodik[$_SESSION['masodik']] : 'fasz tudja milyen évszakban' ?></b> született,
+                        és méghozzá szereted a <b><?= isset($_SESSION['otodik']) && isset($otodik[$_SESSION['otodik']]) ? $otodik[$_SESSION['otodik']] : 'fasz tudja mit' ?></b> az ánusznyílásodban.
                     </h3>
                 </div>
             </div>

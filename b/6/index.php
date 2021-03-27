@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION['5'] = isset($_GET['answer']) ? $_GET['answer'] : 'fasztudja';
+$_SESSION['otodik'] = isset($_GET['answer']) ? $_GET['answer'] : 'fasztudja';
 ?><!DOCTYPE html>
 <html lang="hu">
 <head>
