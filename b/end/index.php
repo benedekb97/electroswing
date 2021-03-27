@@ -51,7 +51,7 @@ $hatodik = [
     'lidli' => 'Lidliben',
     'kisbot'=> 'Kisbótban',
     'fasztudja' => 'fasz tudja'
-]
+];
 ?><!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -85,7 +85,7 @@ $hatodik = [
                 </div>
                 <div class="card-body">
                     <pre>
-                        <?= var_dump($_SESSION) ?>
+                        <?= var_dump($_SESSION); ?>
                     </pre>
                     <h3 style="text-align:center;">Egy <b><?= isset($_SESSION['1']) && isset($elso[$_SESSION['1']]) ? $elso[$_SESSION['1']] : 'fasz tudja milyen öreg' ?></b>
                         elefánt vagy, aki egy <b><?= isset($_SESSION['2']) && isset($masodik[$_SESSION['2']]) ? $masodik[$_SESSION['2']] : 'fasz tudja milyen évszakban' ?></b> született,
