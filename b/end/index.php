@@ -1,6 +1,8 @@
 <?php
     session_start();
 
+
+
 $elso = [
     '1' => 'geci fiatal',
     '2' => 'átlagos életkorú',
@@ -82,9 +84,12 @@ $hatodik = [
                     <h5 class="card-title" style="margin-bottom:0;">Eredmény</h5>
                 </div>
                 <div class="card-body">
+                    <pre>
+                        <?= var_dump($_SESSION) ?>
+                    </pre>
                     <h3 style="text-align:center;">Egy <b><?= isset($_SESSION['1']) && isset($elso[$_SESSION['1']]) ? $elso[$_SESSION['1']] : 'fasz tudja milyen öreg' ?></b>
                         elefánt vagy, aki egy <b><?= isset($_SESSION['2']) && isset($masodik[$_SESSION['2']]) ? $masodik[$_SESSION['2']] : 'fasz tudja milyen évszakban' ?></b> született,
-                        és méghozzá szereted a <b><?= isset($_SESSION['5']) && isset($otodik[$_SESSION['5']]) ? $otodik[$_SESSION['5']] : 'fasz tudja milyen évszakban' ?></b> az ánusznyílásodban.
+                        és méghozzá szereted a <b><?= isset($_SESSION['5']) && isset($otodik[$_SESSION['5']]) ? $otodik[$_SESSION['5']] : 'fasz tudja mit' ?></b> az ánusznyílásodban.
                     </h3>
                 </div>
             </div>
